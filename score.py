@@ -35,10 +35,6 @@ def score(answer_json, gt_df, isopenbook=False):
     weight_score = sum(weight_score_list) / total_weight_score
     return binary_score, weight_score
     
- 
-        
-        
-
 tabs = pd.ExcelFile("asset/240118_d-test데이터셋_v1.xlsx").sheet_names 
 df = pd.read_excel("asset/240118_d-test데이터셋_v1.xlsx",
                    sheet_name=tabs[1])
